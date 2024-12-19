@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="../static/js/jogodavelha.js"></script>
+    <body style="background-color:lightgray;"></body>
+</head>
+<body background=('Scene\ 10.jpg')>
+    <center>
+        <div>
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(1, this)" height="100px" width="100px">
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(2, this)" height="100px" width="100px">
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(3, this)" height="100px" width="100px">
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(4, this)" height="100px" width="100px">
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(5, this)" height="100px" width="100px">
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(6, this)" height="100px" width="100px">
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(7, this)" height="100px" width="100px">
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(8, this)" height="100px" width="100px">
+            <img src="{{ url_for('static', filename='imagens/branco.png') }}" onclick="jogodavelha(9, this)" height="100px" width="100px">
+        </div>
+         <p id="resultado"></p> 
+        <br>
+
+    <button id="enviarResultado" onclick="enviarValorParaJogo()">Enviar Resultado</button>
+
+    </center>
+</body>
+</html>
